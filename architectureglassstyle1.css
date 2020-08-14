@@ -667,17 +667,15 @@ transform: translateX(40%);
       /* height: 92vh; */
   }
   .container {
-      text-align: center;
-      padding-top:14rem;
-      padding-right: 0rem;
-      padding-bottom: 3rem;
-      padding-left: 0px;
+
   }
   .headline {
-      font-size: 35px;
-      color: white;
-      font-weight: bolder;
-      text-align: center;
+
+        text-align: center;
+          font-size: 25px;
+          color: white;
+          font-weight: bolder;
+          margin-left: 0rem;
   }
   .subheadline {
       display: none;
