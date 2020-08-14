@@ -647,7 +647,8 @@ a {
         background-color: #1f2f3f;
         overflow: hidden;
         animation: slide 12s infinite;
-        font-weight: 100;
+        /* font-size: 20px; */
+        font-weight: 500;
     }
     slide:nth-child(1) {
         left: 0%;
@@ -685,7 +686,8 @@ a {
         margin-top: 20rem;
         margin-left: 3rem;
         color: #fff;
-        /* font-weight: 10px; */
+        font-size: 20px;
+        font-weight: 500;
     }
     slide .p span {
         /* color:red; */
@@ -807,7 +809,9 @@ a {
         height: 60vh;
         /* background: #0001; */
         background-color: #0008;
-        top: 90.5px;
+        /* top: 90.5px; */
+        top: 90px;
+        
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -844,12 +848,32 @@ a {
         /* height: 92vh; */
     }
     .container {
-        text-align: center;
+        /* text-align: center; */
         padding-top: 14rem;
         padding-right: 0rem;
         padding-bottom: 3rem;
         padding-left: 0px;
-    }
+        float: left;
+    }  slide .p {
+          font-family: sans-serif;
+          font-size: 30px;
+          text-align: left;
+          display: inline-block;
+          width: 100%;
+          margin-top: 20rem;
+          margin-left: 2rem;
+          color: #fff;
+          font-size: 23px;
+          font-weight: 500;
+      }
+      slide .p span {
+          /* color:red; */
+          font-size: 20px;
+          text-align: center;
+          font-weight: 100;
+          margin-top: 10rem;
+          /* font-style */
+      }
     .headline {
         font-size: 35px;
         color: white;
@@ -875,7 +899,7 @@ a {
     /* Image and Description MediaQuery Starts Here */
     .containers1 {
         width: 100%;
-        height: 180vh;
+        height: 220vh;
         overflow: hidden;
     }
     /* .containers1 .leftimage {
@@ -901,6 +925,26 @@ a {
     .images{
       width: 110px;
       height: 90px;
+    }
+    slide .p {
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        margin-top: 20rem;
+        margin-left: 3rem;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    slide .p span {
+        /* color:red; */
+        font-size: 20px;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 10rem;
+        /* font-style */
     }
     .containers1 .rightdescription {
         width: 100%;

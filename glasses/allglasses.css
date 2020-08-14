@@ -323,38 +323,45 @@ slide:nth-child(4){
   background-position: center;
 }
 
+
 slide .p {
-  font-family: sans-serif;
-  font-size: 50px;
-  text-align: left;
-  display: inline-block;
-  width: 100%;
-  margin-top: 15rem;
-  margin-left: 10rem;
-  color:#fff;
-  /* font-weight: 3002px; */
-  text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 50px;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    margin-top: 15rem;
+    margin-left: 10rem;
+    color: #fff;
+    /* font-weight: 3002px; */
+    text-transform: uppercase;
 }
 
 slide .p span {
-  /* color:red; */
-  font-size:20px;
-  text-align: center;
-  margin-top: 10rem;
-  color: #fff7;
-  text-transform: uppercase;
-}
-.buttons {
-  margin-top: 2rem;
-  border-radius: 10px;
-  padding: 10px;
-  background-color:rgba(255,255,255,0.1);
-
-
-}
-.buttons a{
+    /* color:red; */
+    font-size: 20px;
     text-align: center;
-    color: #eee8;
+    margin-top: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.buttons {
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.buttons:hover{
+    margin-top: 2rem;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: rgba(0, 255,255, 0.5);
+}
+
+.buttons a {
+    text-align: center;
+    color: #eee;
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -641,13 +648,11 @@ transform: translateX(40%);
   slide:nth-child(1){
     left: 0%;
     animation-delay: -1s;
-    background-image: url('images/slide1.jpg');
     background-size: cover;
     background-position: center;
   }
   slide:nth-child(2){
     animation-delay: 2s;
-    background-image: url('images/slide1.jpg');
     background-size: cover;
     background-position: center;
     left: 100%;
@@ -655,7 +660,6 @@ transform: translateX(40%);
   }
   slide:nth-child(3){
     animation-delay: 5s;
-    background-image: url('images/slide2.jpg');
     background-size: cover;
     background-position: center;
     left: 100%;
@@ -664,7 +668,6 @@ transform: translateX(40%);
   slide:nth-child(4){
     left: 100%;
     animation-delay: 8s;
-    background-image: url('images/slide3.jpg');
     background-size: cover;
     background-position: center;
   }
@@ -833,7 +836,8 @@ transform: translateX(40%);
     width: 70%;
     height: 60vh;
     background-color: #0008;
-    top:90.5px;
+    top: 90px;
+
     left: -100%;
     text-align: center;
     transition:all .5s;
@@ -878,7 +882,26 @@ transform: translateX(40%);
       padding-right: 0rem;
       padding-bottom: 3rem;
       padding-left: 0px;
-  }
+  }  slide .p {
+        font-family: sans-serif;
+        font-size: 30px;
+        text-align: left;
+        display: inline-block;
+        width: 100%;
+        margin-top: 20rem;
+        margin-left: 3rem;
+        color: #fff;
+        font-size: 26px;
+        font-weight: 500;
+    }
+    slide .p span {
+        /* color:red; */
+        font-size: 20px;
+        text-align: center;
+        font-weight: 100;
+        margin-top: 10rem;
+        /* font-style */
+    }
   .headline {
       font-size: 35px;
       color: white;

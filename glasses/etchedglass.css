@@ -787,7 +787,9 @@ a {
         height: 60vh;
         /* background: #0001; */
         background-color: #0008;
-        top: 90.5px;
+        /* top: 90.5px; */
+        top: 90px;
+        
         left: -100%;
         text-align: center;
         transition: all .5s;
@@ -829,7 +831,26 @@ a {
         padding-right: 0rem;
         padding-bottom: 3rem;
         padding-left: 0px;
-    }
+    }  slide .p {
+          font-family: sans-serif;
+          font-size: 30px;
+          text-align: left;
+          display: inline-block;
+          width: 100%;
+          margin-top: 20rem;
+          margin-left: 3rem;
+          color: #fff;
+          font-size: 26px;
+          font-weight: 500;
+      }
+      slide .p span {
+          /* color:red; */
+          font-size: 20px;
+          text-align: center;
+          font-weight: 100;
+          margin-top: 10rem;
+          /* font-style */
+      }
     .headline {
         font-size: 35px;
         color: white;

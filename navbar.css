@@ -160,7 +160,7 @@ ul li ul li .dropdown:hover{
 
 /* Part1 Starts Here */
 .bg-img {
-    background-image: url("images/firstcover.jpg");
+    background-image: url("images/background.jpg");
     min-height: 380px;
     /* Center and scale the image nicely */
     background-position: center;
