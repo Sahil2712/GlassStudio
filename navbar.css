@@ -43,8 +43,9 @@ nav ul .navlinking{
 
 nav ul li a{
   position: relative;
-  font-size: 18px;
+  font-size: 13px;
   color: white;
+  font-weight: 400;
   /* padding: 5px 0; */
   text-transform: uppercase;
 
@@ -84,21 +85,17 @@ label #cancel{
 #active {
     color: red;
 }
-
 ul li ul {
     visibility: hidden;
     opacity: 0;
     position: absolute;
     transition: all 0.5s ease;
     left: 0;
-    /* margin-left: 50.4rem; */
-    margin-left: 57.4rem;
-
+    margin-left: 61.8rem;
     list-style: none;
     margin-top: 0.1rem;;
-    /* background-color: #fff1; */
     background-color: #0007;
-    width: 400px;
+    width: 350px;
     height: 44vh;
 
     /* list-style-type: none; */
@@ -125,7 +122,7 @@ ul li ul li:hover {
 .hellos {
     float: left;
     width: 40%;
-    margin-left: 29px;
+    margin-left: 18px;
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: left;
@@ -143,7 +140,7 @@ ul li ul li:hover {
 
 .drophover {
   background-color: #fff0;
-  font-size: 15px;
+  font-size: 13px;
 
 }
 .drophover:hover{
@@ -155,6 +152,8 @@ ul li ul li .dropdown:hover{
   /* font-size: 10px; */
 
 }
+
+/* Navbar */
 
 /* Navbar */
 
@@ -182,8 +181,8 @@ ul li ul li .dropdown:hover{
 }
 
 .headline {
-    font-weight: 700;
-    font-size: 80px;
+    font-weight: 400;
+    font-size: 60px;
     font-display: block;
     color: #ffffff!important;
     text-align: center;
@@ -195,7 +194,9 @@ ul li ul li .dropdown:hover{
 }
 
 .subheadline,h2 {
-    font-size: 26px;
+    font-size: 20px;
+    font-weight: 200;
+
     color: #ffffff!important;
     letter-spacing: 2px;
     text-align: center;
@@ -271,8 +272,6 @@ ul li ul li .dropdown:hover{
 .scrolling-active .nav-link::after {
     background-color: #313131;
 }
-
-
 
 
 /* Part2 Starts Here */
@@ -369,9 +368,11 @@ h3 {
 
 .btn-2,
 .btn-3 {
+  font-size: 12px;
     color: red;
     padding:10px;
     margin-right: 4rem;
+    width: 240px;
 }
 
 .btn-2:hover,
@@ -480,6 +481,47 @@ a {
 
 
 /* Part3 Product Ends Here */
+/* Why CHOOSE STARTS HERE */
+.container5{
+  height:50vh;
+  text-align: center;
+  margin-top: 2rem;
+  color: black;
+}
+.container5 .heading {
+    font-size: 26px;
+    font-weight: 100;
+    padding-bottom: 20px;
+    padding-top: 50px;
+
+}
+.left2,.right2{
+  float: left;
+  margin-left:1rem;
+}
+.left2{
+  width: 30%;
+}
+.right2{
+  width: 60%;
+  margin-top: -1rem;
+
+}
+.unique{
+  font-size: 20px;
+  font-weight:200;
+  text-align: left;
+}
+.service{
+  margin-top: 1rem;
+  text-align: left;
+  /* margin-left: 1rem; */
+}
+.img{
+  margin-top: -1rem;
+  margin-left: 3rem;
+}
+/* Why CHOOSE ENDS HERE */
 
 
 /* Part4 COntact and Map Starts Here */
@@ -1212,9 +1254,10 @@ width: 300px;
 
   /* Part3 MediaQuery For Products Starts Here*/
   .container3 {
-      height: 340vh;
+      height: 400vh;
       font-style: serif;
       text-align: center;
+      overflow-x: hidden;
 
   }
   .heading {
@@ -1284,6 +1327,48 @@ width: 300px;
     margin-left: 2rem;
   }
   /* Part3 MediaQuery for Product Ends Here */
+  /* Why CHOOSE STARTS HERE */
+  .container5{
+    height: 150vh;
+    text-align: center;
+    color: black;
+    overflow-x: hidden;
+  }
+  .heading {
+      font-size: 20px;
+      font-weight: 100;
+      padding-bottom: 20px;
+  }
+  .left2,.right2{
+    /* float: left; */
+    /* margin-left:1rem; */
+  }
+  .left2{
+    width: 20%;
+    float: left;
+    /* margin-left: -2rem; */
+    text-align: left;
+  }
+  .right2{
+    width: 50%;
+    /* margin-top: -1rem; */
+  }
+  .unique{
+    font-size: 20px;
+    font-weight:200;
+    text-align: left;
+  }
+  .service{
+    margin-top: 1rem;
+    text-align: left;
+    /* margin-left: 1rem; */
+  }
+  .img{
+    margin-top: -1rem;
+    margin-left: 0rem;
+  }
+  /* Why CHOOSE ENDS HERE */
+
 
 
   /* Part4 Media Query For Contactus Starts Here */

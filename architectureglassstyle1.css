@@ -11,7 +11,6 @@ body {
     color: #666;
 
 }
-
 /* Navbar */
 nav{
    height: 90px;
@@ -39,13 +38,13 @@ nav ul .navlinking{
   margin-right:2rem;
   margin-top:2rem;
   text-align: center;
-
 }
 
 nav ul li a{
   position: relative;
-  font-size: 18px;
-  color: #fff;
+  font-size: 13px;
+  color: white;
+  font-weight: 400;
   /* padding: 5px 0; */
   text-transform: uppercase;
 
@@ -85,20 +84,20 @@ label #cancel{
 #active {
     color: red;
 }
-
 ul li ul {
-  visibility: hidden;
-  opacity: 0;
-  position: absolute;
-  transition: all 0.5s ease;
-  left: 0;
-  margin-left: 57.4rem;
-  list-style: none;
-  margin-top: 0.1rem;;
-  background-color: #0007;
-  width: 400px;
-  height: 44vh;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.5s ease;
+    left: 0;
+    margin-left: 61.8rem;
+    list-style: none;
+    margin-top: 0.1rem;;
+    background-color: #0007;
+    width: 350px;
+    height: 44vh;
 
+    /* list-style-type: none; */
 
 }
 
@@ -122,7 +121,7 @@ ul li ul li:hover {
 .hellos {
     float: left;
     width: 40%;
-    margin-left: 29px;
+    margin-left: 18px;
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: left;
@@ -140,7 +139,7 @@ ul li ul li:hover {
 
 .drophover {
   background-color: #fff0;
-  font-size: 15px;
+  font-size: 13px;
 
 }
 .drophover:hover{
@@ -158,7 +157,6 @@ ul li ul li .dropdown:hover{
 
 /* Part1 Starts Here */
 .bg-img {
-    background-image: url("images/architecture1.png");
     min-height: 380px;
     /* Center and scale the image nicely */
     background-position: center;
@@ -167,12 +165,16 @@ ul li ul li .dropdown:hover{
     /* Needed to position the navbar */
     position: relative;
     height: 56vh;
+    text-align: left;
+    background-color: grey;
 }
 
 
 
 .container {
-    text-align: center;
+  text-align: left;
+
+    /* text-align: center; */
     padding-top: 11rem;
     padding-right: 0rem;
     padding-bottom: 9rem;
@@ -180,12 +182,12 @@ ul li ul li .dropdown:hover{
 }
 
 .headline {
-    font-weight: 700;
-    font-size: 80px;
+    font-weight: 400;
+    font-size: 50px;
     font-display: block;
     color: #ffffff!important;
-    text-align: center;
-    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4)
+    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+    margin-left: 3rem;
 }
 
 h2 {
