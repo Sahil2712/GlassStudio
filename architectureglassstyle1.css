@@ -11,6 +11,19 @@ body {
     color: #666;
 
 }
+.feedback {
+  background-color:black;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+}
+#mybutton {
+  position: fixed;
+  /* bottom: 4px; */
+  top: 35rem;
+  right: 10px;
+  color: white;
+}
 /* Navbar */
 nav{
    height: 90px;
@@ -164,7 +177,8 @@ ul li ul li .dropdown:hover{
     background-size: cover;
     /* Needed to position the navbar */
     position: relative;
-    height: 56vh;
+    background-image: url(https://nikiglasstudio.com/wp-content/uploads/2018/11/Art-Glass-Header-1.jpg)!important;
+    height: 46vh;
     text-align: left;
     background-color: grey;
 }
@@ -183,7 +197,7 @@ ul li ul li .dropdown:hover{
 
 .headline {
     font-weight: 400;
-    font-size: 50px;
+    font-size: 60px;
     font-display: block;
     color: #ffffff!important;
     text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);

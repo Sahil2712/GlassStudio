@@ -8,6 +8,7 @@ body {
     font-family: "Open San", Arial, sans-serif;
     font-size: 14px;
     /* color: ; */
+    color: #000;
 }
 
 
@@ -182,7 +183,19 @@ ul li ul li .dropdown:hover{
 }
 
 /* Navbar */
-
+.feedback {
+  background-color:black;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+}
+#mybutton {
+  position: fixed;
+  /* bottom: 4px; */
+  top: 35rem;
+  right: 10px;
+  color: white;
+}
 
 /* Part1 Starts Here */
 

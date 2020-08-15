@@ -9,9 +9,21 @@ body {
     font-family: "Open San", Arial, sans-serif;
     font-size: 14px;
     font-weight: 200;
-    color: #666;
+    /* color: #666; */
 }
-
+.feedback {
+  background-color:black;
+  border-radius: 40px;
+  padding: 10px 30px;
+  color: white;
+}
+#mybutton {
+  position: fixed;
+  /* bottom: 4px; */
+  top: 35rem;
+  right: 10px;
+  color: white;
+}
 /* Navbar */
 nav{
    height: 90px;
@@ -160,6 +172,10 @@ ul li ul li .dropdown:hover{
 /* Part1 Starts Here */
 .bg-img {
     /* background-image: url("images/firstcover.jpg"); */
+    /* background-image:url(https://nikiglasstudio.com/wp-content/uploads/2018/11/About-Us-Header-1.jpg)!important; */
+    /* background-image: url('https://nikiglasstudio.com/wp-content/uploads/2018/11/products-header-2.jpg')!important; */
+    background-image: url(https://nikiglasstudio.com/wp-content/uploads/2019/02/Archetictural-clear-glass.jpg)!important;
+
     background-color: rgba(0,0,0,0.6);
     min-height: 100px;
     /* Center and scale the image nicely */
@@ -168,7 +184,7 @@ ul li ul li .dropdown:hover{
     background-size: cover;
     /* Needed to position the navbar */
     position: relative;
-    height: 56vh;
+    height: 46vh;
 }
 
 
@@ -182,18 +198,17 @@ ul li ul li .dropdown:hover{
 }
 
 .headline {
-    font-weight: 400;
-    font-size: 50px;
-    font-display: block;
-    color: #ffffff!important;
-    text-align: left;
-    margin-left: 4rem;
-    margin-top: 2rem;
-    text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.3);
-   -webkit-animation: slidings 0.5s forwards;
-   -webkit-animation-delay: 2s;
-   animation: slidings 0.5s forwards;
-   animation-delay: 2s;
+  font-weight: 400;
+  font-size: 60px;
+  font-display: block;
+  color: #ffffff!important;
+  text-align: left;
+  text-shadow: 0em 0.1em 0.1em rgba(0, 0, 0, 0.4);
+  -webkit-animation: slidings 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slidings 0.5s forwards;
+  animation-delay: 2s;
+  margin-left: 3rem;
 }
 
 
@@ -241,10 +256,56 @@ ul li ul li .dropdown:hover{
 /* Part2 Starts Here */
 
 
+.container1{
+  width: 100%;
+  height: 40vh;
+}
+.col1,.col2,.col3{
+  float: left;
+  width: 30%;
+}
+.logos1 {
+    text-align: left;
+    margin-left: 1rem;
+    margin-top: 2rem;
+}
+/* Part3 Products Starts Here */
+.container3{
+  height: 40vh;
+      background-color:#F5F5F5;
 
+}
+.col1,.col2,.col3{
+  float: left;
+  width: 25%;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+.span{
+  margin-left: 3rem;
+  color: black;
+  font-size: 30px;
+  text-align: left;
+}
 
+.col1 .text{
+  /* color: black; */
+  text-align: left;
+  margin-top: 1.2rem;
+  margin-left: 0rem;
 
-
+}
+.texting{
+  text-align: left;
+  color: black;
+  margin-bottom: 1rem;
+  margin-left: 3rem;
+}
+.texting a{
+  text-decoration-style: none;
+  color: black;
+  font-size: 15px;
+}
 /* Part4 COntact and Map Starts Here */
 
 .container4 {
@@ -524,7 +585,62 @@ textarea{
 
 
 
+  .container1{
+    width: 100%;
+    height: 40vh;
+  }
+  .col1,.col2,.col3{
+    float: left;
+    width: 30%;
+  }
+  .logos1 {
+      text-align: left;
+      margin-left: 1rem;
+      margin-top: 2rem;
+  }
+  /* Part3 Products Starts Here */
+  .container3{
+    height: 40vh;
+        background-color:#F5F5F5;
 
+  }
+  .col1,.col2,.col3{
+    float: left;
+    width: 25%;
+    margin-top: 2rem;
+    margin-left: 3rem;
+  }
+  .col3{
+    width: 30%;
+  }
+  .span{
+    margin-left: 3rem;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .col1 .text{
+    /* color: black; */
+    text-align: left;
+    margin-top: 1.2rem;
+    margin-left: 0rem;
+
+  }
+  .texting{
+    text-align: left;
+    color: black;
+    margin-bottom: 1rem;
+    margin-left: 3rem;
+  }
+  .texting a{
+    text-decoration-style: none;
+    color: black;
+    font-size: 15px;
+  }
+  .logos1{
+
+  }
 
   /* Part4 Media Query For Contactus Starts Here */
   .container4 {
@@ -715,6 +831,44 @@ width: 300px;
       text-align: center;
   }
 
+  /* Part3 Products Starts Here */
+  .container3{
+    height: 90vh;
+        background-color:#F5F5F5;
+
+  }
+  .col1,.col2,.col3{
+    float: left;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 1rem;
+  }
+  .span{
+    margin-left: 1rem;
+    color: black;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .col1 .text{
+    /* color: black; */
+    text-align: left;
+    margin-top: 1.2rem;
+    margin-left: 0rem;
+
+  }
+  .texting{
+    text-align: left;
+    color: black;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+  }
+  .texting a{
+    text-decoration-style: none;
+    color: black;
+    font-size: 14px;
+  }
+  /* Part4 COntact and Map Starts Here */
   /* Part4 Media Query For Contactus Starts Here */
   .container4 {
       /* text-align: center; */
@@ -808,6 +962,10 @@ width: 300px;
   .logos {
       text-align: left;
       margin-left: 3rem;
+  }
+  .logos1 {
+      text-align: left;
+      margin-left: 1rem;
   }
   .images2{
     width: 32px;
