@@ -608,15 +608,13 @@ img.hover-shadow {
     text-align: left;
     color: black;
 }
-
 .contents {
-    padding-left: 40px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    color: #0005;
-    font-weight: 1000;
+padding-left: 40px;
+padding-top: 10px;
+padding-bottom: 10px;
+color:#000;
+font-weight: 300;
 }
-
 
 /* Image and Description Ends here */
 

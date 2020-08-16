@@ -586,9 +586,10 @@ img.hover-shadow {
 padding-left: 40px;
 padding-top: 10px;
 padding-bottom: 10px;
-color:#0005;
-font-weight: 1000;
+color:#000;
+font-weight: 300;
 }
+
 .button {
   margin-top: 2rem;
   border-radius: 10px;
