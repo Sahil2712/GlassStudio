@@ -11,6 +11,10 @@ body {
     color: #666;
 
 }
+#logo{
+  margin-top: 5px;
+  width: 150px;
+}
 .feedback {
   background-color:black;
   border-radius: 40px;
@@ -266,7 +270,8 @@ h2 {
 
 .scrolling-active .nav #logo {
   margin-top: 0.4rem;
-    height:50px;
+    height:55px;
+    width: 120px;
 }
 
 .scrolling-active .nav-link::after {
@@ -670,7 +675,10 @@ transform: translateX(40%);
     display:block;
   }
 /* Media Query For Navbar Ends Here */
-
+#logo{
+  margin-top: 5px;
+  width: 130px;
+}
   /* Part1 Media Query Starts Here */
   .bg-img {
       background-position: center;

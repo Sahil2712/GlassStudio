@@ -11,6 +11,10 @@ body {
     font-weight: 200;
     color: #666;
 }
+#logo{
+  margin-top: 5px;
+  width: 150px;
+}
 .feedback {
   background-color:black;
   border-radius: 40px;
@@ -278,7 +282,8 @@ ul li ul li .dropdown:hover{
 
 .scrolling-active .nav #logo {
   margin-top: 0.4rem;
-    height:50px;
+    height:55px;
+    width: 120px;
 }
 
 .scrolling-active .nav-link::after {
@@ -303,7 +308,7 @@ ul li ul li .dropdown:hover{
     height: auto;
     overflow: auto;
     text-align: center;
-    height: 120vh;
+    height: 95vh;
     color: #fff;
     background-color:rgba(0, 0, 0, 0.6);
 
@@ -782,7 +787,10 @@ textarea{
   }
 
 /* Media Query FOr Navnar Ends Here */
-
+#logo{
+  margin-top: 5px;
+  width: 130px;
+}
 /* Media Query FOr Part1 Starts here */
   .bg-img {
       background-position: center;
@@ -836,7 +844,6 @@ textarea{
       width: 100%;
       margin: auto;
       height: auto;
-      background: #696969;
       overflow: auto;
       text-align: center;
       height: 180vh;
@@ -1180,7 +1187,7 @@ width: 300px;
       width: 100%;
       margin: auto;
       height: auto;
-      background: #696969;
+      /* background: #696969; */
       overflow: auto;
       text-align: center;
       height: 190vh;
@@ -1341,7 +1348,7 @@ width: 300px;
   /* Part3 MediaQuery for Product Ends Here */
   /* Why CHOOSE STARTS HERE */
   .container5{
-    height: 150vh;
+    height: 170vh;
     text-align: center;
     color: black;
     overflow-x: hidden;
@@ -1387,7 +1394,7 @@ width: 300px;
   .container4 {
       /* text-align: center; */
       width: 100%;
-      height: 300vh;
+      height: 160vh;
       background-color: #bbb;
   }
   .container4 .leftmost {
@@ -1493,7 +1500,9 @@ width: 300px;
     height: 32px;
       margin-right: 3px;
   }
-
+.ending{
+  text-align:left;
+}
   /* Media Query for footer ends here */
 
 

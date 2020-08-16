@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="stainedglass.css">
-    <title>Stained Glass</title>
+    <title>
+     Stained Glass
+    </title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="images\favicon-32x32.png" type = "image/x-icon">
   </head>
   <body>
     <div class="bg-img">
@@ -14,7 +18,7 @@
           <p class="p">
             Stained Glass
             <br/>
-             <span>
+            <span>
               Want To Know More
               <br/>
             </span>
@@ -28,7 +32,7 @@
         </slide>
         <slide>
           <p class="p">
-          Add Beauty and Color<br/>
+            Add Beauty and Color<br/>
             <span>
               Want To Know More
               <br/>
@@ -43,7 +47,7 @@
         </slide>
         <slide>
            <p class="p">
-             Energy Efficient<br/>
+            Energy Efficient <br/>
              <span>
                Want To Know More
                <br/>
@@ -58,7 +62,7 @@
           </slide>
         <slide>
            <p class="p">
-             Low Maintainance<br/>
+             Low Maintaince<br/>
              <span>
                Want To Know More<br/>
              </span>
@@ -77,7 +81,9 @@
         <i class="fas fa-bars" id="navbutton"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
-      <img src="images/logos.jpg" alt="JSR GLASS " width="100px" id="logo">
+      <a href="http://www.jsrglasstudio.com/">
+        <img src="images/jsr final logo-01.jpg" alt="JSR GLASS " id="logo">
+      </a>
 
       <ul class="nav-links">
 
@@ -90,7 +96,7 @@
                        <ul class="dropdown">
                          <div class="hello"  >
                          <li style="margin-bottom:2rem; "><a href="allglasses.html" class="drophover" >View All Glass</a></li>
-                         <li><a href="lacqueredglass.html" class="drophover" >Lacquered Glass</a></li>
+                         <li><a href="lacqueredglass.html" class="drophover">Lacquered Glass</a></li>
                          <li><a href="digitalprinting.html" class="drophover">Digital Printing</a></li>
                          <li><a href="etchedglass.html" class="drophover">Etched Glass</a></li>
                          <li><a href="laminatedfabrics.html" class="drophover">Laminated Fabric Glass</a></li>
@@ -100,7 +106,7 @@
                          <li style="margin-top:3rem;"><a href="lookingmirror.html" class="drophover">Looking Mirror</a></li>
                          <li><a href="pattern.html" class="drophover">Pattern Glass</a></li>
                          <li><a href="wallpaneling.html" class="drophover">Wall Paneling</a></li>
-                         <li><a href="stainedglass.html" class="drophover" style="border-bottom: red; color:rgba(0,255,255,0.8)">Stained Glass</a></li>
+                         <li><a href="stainedglass.html" class="drophover"  style="border-bottom: red; color:rgba(0,255,255,0.8)">Stained Glass</a></li>
                         </div>
                        </ul>
 
@@ -122,49 +128,125 @@
 
 <!-- Part2 Starts Here -->
 
-<div class="containers1">
+<!-- <div class="containers1">
   <div class="leftimage">
     <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">
 
     <div class="imageleft">
-      <img src="stainedglass/main/stained glss4.PNG" alt="" class="images">
-      <img src="stainedglass/main/stained glass 5.PNG" alt="" class="images">
+      <img src="etchedglass/product/acidetched.PNG" alt="" class="images">
+      <img src="etchedglass/product/acidetched1.PNG" alt="" class="images">
     </div>
     <div class="imageright">
-      <img src="stainedglass/product/stained glass 2.PNG" alt="" class="images">
-      <img src="stainedglass/product/stained glass3.PNG" alt="" class="images">
+      <img src="etchedglass/main/edit.PNG" alt="" class="images">
+      <img src="etchedglass/main/etchedmain.PNG" alt="" class="images">
     </div>
-  </a>
-  </div>
+
+  </a> -->
+  <div class="containers1">
+    <div class="leftimage">
+      <div class="imageleft">
+        <div class="images">
+          <img src="stainedglass\main\stained glss4.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="stainedglass\main\stained glass 5.PNG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="images">
+      </div>
+      </div>
+      <div class="imageright">
+        <div class="images">
+          <img src="stainedglass\product\stained glass 2.PNG" style="width:100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="stainedglass\product\stained glass 6.PNG" style="width:100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="images">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="stainedglass\main\stained glss4.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="stainedglass\main\stained glass 5.PNG" style="width:100%; " class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="stainedglass\product\stained glass 2.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="stainedglass\product\stained glass 6.PNG" style="width:100%" class="image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 
   <div class="rightdescription">
     <h1 class="rightdescriptions">
-      Stained Glass<br/>
+    Stained Glass<br/>
     </h1>
     <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
-      Stained Glass has been practiced since the 12th century or even before that.It was
-      a tedious method to color the glass by adding metallic salts during it's manufacturing.
-      The palaces and mansions of kings,princes were decorated with stained glass
+    Stained Glass has been practiced since the 12th century or even before that.It was a tedious method to color the glass by
+     adding metallic salts during it's manufacturing. The palaces and mansions of kings,princes were decorated with stained glass
           </p>
-          <!-- <h2 class="rightdescriptionheader">
-            Why choose Lacquered glass
-          </h2>
-          <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
-            <li> Durable :Lacquering ensures long lasting , beautiful colours</li>
-            <li>Easy to Use and Maintain </li>
-            <li>Environment-Friendly Paints Used</li>
-            <li>Processing:Can be Cut,Drilled,Grounded</li>
-          </ol> -->
-          <!-- <h2 class="rightdescriptionheader"> -->
-            <!-- Why choose Lacquered glass -->
-            <!-- Features -->
-          <!-- </h2> -->
-          <!-- <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
-            <li> Durable :Lacquering ensures long lasting , beautiful colours</li>
-            <li>Easy to Use and Maintain </li>
-            <li>Environment-Friendly Paints Used</li>
-            <li>Processing:Can be Cut,Drilled,Grounded</li>
-          </ol> -->
+
           <h2 class="rightdescriptionheader">
             Application
           </h2>
@@ -174,27 +256,53 @@
              for the following purposes
           </p> -->
           <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
-            <li> Windows and Doors</li>
+            <li>
+              Windows and Doors
+            </li>
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
-            <li>Ceilings and Churches</li>
+            <li>
+              Ceilings and Churches
+            </li>
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
-            <li>Glass Decorative</li>
+            <li>
+              Glass Decorative
+            </li>
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
-            <!-- <li>Processing:Can be Cut,Drilled,Grounded</li>
+            <!-- <li>Partitions</li>
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
-            </ul> -->
+            </ul>
+            <li>Railings</li>
+            <ul style="list-style-type:none;margin-bottom:0.4rem">
+              <li></li>
 
+            </ul>
+            <li>Shelves</li>
+            <ul style="list-style-type:none;margin-bottom:0.4rem">
+              <li></li>
+
+            </ul>
+            <li>Shower and bath enclosures</li>
+            <ul style="list-style-type:none;margin-bottom:0.4rem">
+              <li></li>
+
+            </ul>
+            <li>Glass walls</li>
+            <ul style="list-style-type:none;margin-bottom:0.4rem">
+              <li></li>
+
+            </ul>
+             <li>Kitchens</li> -->
           </ol>
           <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
 
@@ -210,8 +318,6 @@
   </div>
 </div>
 
-
-<!-- Part2 Ends Here -->
 <div id="mybutton">
 <button class="feedback" >
   <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products" >
@@ -221,11 +327,16 @@
   </a>
 </button>
 </div>
+<!-- Part2 Ends Here -->
+
 <!-- Part 4 Contact US Starts Here -->
 
 
 
 
+
+
+<!-- Footer Starts Here -->
 
 
 <!-- Footer Starts Here -->
@@ -238,8 +349,8 @@
          <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Tel:+91 83759 59175</a>
        </p>
        <p>
-         <a href="mailto:jsrglasstudio@gmail.com">
-           E-mail: jsrglasstudio@gmail.com</a>
+         <a href="mailto:sales@jsrglasstudio.com">
+           E-mail: sales@jsrglasstudio.com</a>
        </p>
      </div>
      </div>
@@ -250,8 +361,8 @@
          <br>
            JSR Design &amp; Glass Studio </a>
          </p>
-         <p>Delhi NCR,</p>
-         <p>New Delhi</p>
+         <p>F 161 Laxmi Nagar,</p>
+         <p>New Delhi,Delhi</p>
          <p>India</p>
        </div>
      </div>
@@ -289,9 +400,10 @@
    </div>
    </div>
    <div class="End">
-     <a href="#" class="ending">Techify</a>
+     <a href="https://webal.netlify.app/" class="ending">Webal</a>
    </div>
  </footer>
+ <!-- Footer Ends Here -->
  <!-- Footer Ends Here -->
  <script src="../script.js" charset="utf-8"></script>
 

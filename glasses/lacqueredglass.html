@@ -6,7 +6,11 @@
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://kit.fontawesome.com/yourcode.js"></script>
     <link rel="stylesheet" href="lacqueredglass.css">
-    <title>Lacquered Glass </title>
+    <title>
+      Lacquered Glass
+    </title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="images\favicon-32x32.png" type = "image/x-icon">
   </head>
   <body>
     <div class="bg-img">
@@ -78,7 +82,9 @@
         <i class="fas fa-bars" id="navbutton"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
-      <img src="images/logos.jpg" alt="JSR GLASS " width="100px" id="logo">
+      <a href="http://www.jsrglasstudio.com/">
+        <img src="images/jsr final logo-01.jpg" alt="JSR GLASS " id="logo">
+      </a>
 
       <ul class="nav-links">
 
@@ -123,11 +129,10 @@
 
 <!-- Part2 Starts Here -->
 
-<div class="containers1">
   <!-- <div class="leftimage">
   </div> -->
-  <div class="leftimage">
-    <!-- <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products"> -->
+  <!-- <div class="leftimage">
+    <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">
     <a href="../contactus.html"></a>
     <div class="imageleft">
       <img src="Lacquered Glass/main pic/s22.PNG" alt="" class="images">
@@ -138,7 +143,103 @@
       <img src="Lacquered Glass/product/paint22.PNG" alt="" class="images">
     </div>
   </a>
-  </div>
+  </div> -->
+  <div class="containers1">
+    <div class="leftimage">
+      <div class="imageleft">
+        <div class="images">
+          <img src="Lacquered Glass/main pic/s22.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="Lacquered Glass\product\backpaintedkitchen.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="images">
+      </div>
+      </div>
+      <div class="imageright">
+        <div class="images">
+          <img src=" Lacquered Glass/main pic/back painted 1.PNG" style="width:100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src=" Lacquered Glass/product/paint22.PNG" style="width:100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="images">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="Lacquered Glass/main pic/s22.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="Lacquered Glass\product\backpaintedkitchen.jpg" style="width:100%; " class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src=" Lacquered Glass/main pic/back painted 1.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src=" Lacquered Glass/product/paint22.PNG" style="width:100%" class="image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
   <div class="rightdescription">
     <h1 class="rightdescriptions">
       Lacquered Glass<br/>
@@ -257,6 +358,9 @@
 
 <!-- Footer Starts Here -->
 
+
+<!-- Footer Starts Here -->
+
  <footer >
    <div class="container2">
      <div class="left1">
@@ -265,8 +369,8 @@
          <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Tel:+91 83759 59175</a>
        </p>
        <p>
-         <a href="mailto:jsrglasstudio@gmail.com">
-           E-mail: jsrglasstudio@gmail.com</a>
+         <a href="mailto:sales@jsrglasstudio.com">
+           E-mail: sales@jsrglasstudio.com</a>
        </p>
      </div>
      </div>
@@ -277,8 +381,8 @@
          <br>
            JSR Design &amp; Glass Studio </a>
          </p>
-         <p>Delhi NCR,</p>
-         <p>New Delhi</p>
+         <p>F 161 Laxmi Nagar,</p>
+         <p>New Delhi,Delhi</p>
          <p>India</p>
        </div>
      </div>
@@ -316,9 +420,10 @@
    </div>
    </div>
    <div class="End">
-     <a href="#" class="ending">Techify</a>
+     <a href="https://webal.netlify.app/" class="ending">Webal</a>
    </div>
  </footer>
+ <!-- Footer Ends Here -->
  <!-- Footer Ends Here -->
  <script src="../script.js" charset="utf-8"></script>
 

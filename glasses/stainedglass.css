@@ -9,6 +9,10 @@ body {
     font-size: 14px;
     /* color: ; */
 }
+#logo{
+  margin-top: 5px;
+  width: 150px;
+}
 
 .feedback {
   background-color:black;
@@ -24,29 +28,10 @@ body {
   color: white;
 }
 /* Navbar */
-.button {
-  margin-top: 2rem;
-  border-radius: 10px;
-  padding: 10px;
-  background-color:rgb(0,0,0);
 
-
-}
-.button a{
-    text-align: center;
-    color: #eee8;
-    font-weight: 900;
-    text-transform: uppercase;
-}
-a{
-  text-decoration: none;
-
-}
 nav {
     height: 90px;
-    /* background: #0003; */
-    background-color: #0007;
-
+    background: #0003;
     position: fixed;
     /* float: right; */
     width: 100%;
@@ -87,7 +72,6 @@ nav ul li a{
   text-transform: uppercase;
 
 }
-
 nav ul li a:before {
     position: absolute;
     content: '';
@@ -125,6 +109,7 @@ label #cancel {
 #active {
     color: red;
 }
+
 
 ul li ul {
     visibility: hidden;
@@ -195,10 +180,14 @@ ul li ul li .dropdown:hover{
 }
 
 
+
+/* Navbar */
+
+
 /* Part1 Starts Here */
 
 .bg-img {
-    /* background-image: url("images/firstcover.jpg"); */
+    background-image: url("images/firstcover.jpg");
     min-height: 380px;
     /* Center and scale the image nicely */
     background-position: center;
@@ -286,8 +275,10 @@ ul li ul li .dropdown:hover{
 }
 
 .scrolling-active .nav #logo {
-    margin-top: 0.4rem;
-    height: 50px;
+  margin-top: 0.4rem;
+   height:55px;
+   width: 120px;
+
 }
 
 .scrolling-active .nav-link::after {
@@ -322,15 +313,15 @@ slide:nth-child(1) {
     left: 0%;
     animation-delay: -1s;
     background-image: url('stainedglass/product/stained glass 2.PNG');
-    background-size: cover;
+    background-size:cover;
     background-position: center;
 }
 
 slide:nth-child(2) {
     animation-delay: 2s;
     background-image: url('stainedglass/product/stained glass 6.PNG');
-
     background-size: cover;
+    width: 100%;
     background-position: center;
     left: 100%;
 }
@@ -338,7 +329,6 @@ slide:nth-child(2) {
 slide:nth-child(3) {
     animation-delay: 5s;
     background-image: url('stainedglass/product/stained glass 4.PNG');
-
     background-size: cover;
     background-position: center;
     left: 100%;
@@ -348,7 +338,6 @@ slide:nth-child(4) {
     left: 100%;
     animation-delay: 8s;
     background-image: url('stainedglass/product/stained glass3.PNG');
-
     background-size: cover;
     background-position: center;
 }
@@ -381,16 +370,12 @@ slide .p span {
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.buttons:hover{
-    margin-top: 2rem;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: rgba(0, 255,255, 0.5);
-}
 
 .buttons a {
     text-align: center;
+    /* color: #eee8; */
     color: #eee;
+
     font-weight: 900;
     text-transform: uppercase;
 }
@@ -407,7 +392,7 @@ a {
 
 .containers1 {
     width: 100%;
-    height: 110vh;
+    height: 90vh;
     overflow: hidden;
     /* background-image: url('images/slide2.jpg'); */
     background-size: cover;
@@ -422,9 +407,11 @@ a {
 }
 .imageleft{
 
-
+  /* height: 200px;
+  width: 300px; */
   width:30%;
   float: left;
+  /* height:100px; */
 }
 .imageright{
   width:30%;
@@ -438,6 +425,157 @@ a {
   margin-top: 2rem;
   margin-left: 2rem;
 }
+
+/* For Hover effect */
+/* .row > .column {
+  padding: 0 8px;
+
+} */
+.left,.right{
+  width:40%;
+  float:left;
+  margin-top:40px;
+background-color:red;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+  /* background-color: black; */
+  background-color: #0008;
+  /* transform:transparent; */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 900px;
+}
+.image{
+  height: 70vh;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.hover-shadow{
+  width: 150px;
+  height: 150px;
+}
+
+
+
+
+/* End of Hover effect */
+
+
+
+
 .containers1 .rightdescription {
     float: left;
     width: 45%;
@@ -465,7 +603,24 @@ a {
     font-weight: 1000;
 }
 
+.button {
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  background-color:rgb(0,0,0);
 
+
+}
+.button a{
+    text-align: center;
+    color: #eee8;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+
+}
 /* Image and Description Ends here */
 
 
@@ -478,9 +633,9 @@ a {
     width: 100%;
     margin: auto;
     height: auto;
+    /* background: grey; */
     background-color:rgba(0, 0, 0, 0.9);
 
-    /* background: grey; */
     overflow: hidden;
     text-align: center;
     height: 50vh;
@@ -667,13 +822,11 @@ a {
     slide:nth-child(1) {
         left: 0%;
         animation-delay: -1s;
-        /* background-image: url('images/slide1.jpg'); */
         background-size: cover;
         background-position: center;
     }
     slide:nth-child(2) {
         animation-delay: 2s;
-        /* background-image: url('images/slide1.jpg'); */
         background-size: cover;
         background-position: center;
         left: 100%;
@@ -699,15 +852,12 @@ a {
         margin-top: 20rem;
         margin-left: 3rem;
         color: #fff;
-        /* font-weight: 10px; */
     }
     slide .p span {
-        /* color:red; */
         font-size: 20px;
         text-align: center;
         font-weight: 100;
         margin-top: 10rem;
-        /* font-style */
     }
     .buttons {
         margin-top: 3rem;
@@ -726,9 +876,18 @@ a {
     /* Image and Description MediaQuery Starts Here */
     .containers1 {
         width: 100%;
-        height: 100vh;
+        height:150vh;
         overflow: hidden;
     }
+    /* .containers1 .leftimage {
+        float: left;
+        margin-left: 2.2rem;
+        margin-top: 10rem;
+    }
+    .imageleft {
+        height: 200px;
+        width: 100px;
+    } */
     .containers1 .leftimage{
       float: left;
       margin-left: 2.2rem;
@@ -750,14 +909,13 @@ a {
       height: 180px;
       margin-top: 2rem;
     }
-
     .containers1 .rightdescription {
         width: 100%;
         margin-left: 3rem;
         margin-top: 2rem;
     }
     .rightdescriptions {
-        color: red;
+        /* color: red; */
         text-shadow: 0rem 0.1rem 0.1rem #9b9b9b;
     }
     .rightdescription .rightdescriptionheader {
@@ -815,9 +973,6 @@ a {
     }
     ul {
         position: fixed;
-        /* width: 80%;
-        height: 60vh;
-        background: #0001; */
         width: 70%;
         height: 60vh;
         /* background: #0001; */
@@ -849,7 +1004,10 @@ a {
     }
     #check:checked~label #cancel {
         display: block;
-    }
+    }#logo{
+  margin-top: 5px;
+  width: 130px;
+}
     /* Media Query For Navbar Ends Here */
     /* Part1 Media Query Starts Here */
     .bg-img {
@@ -911,9 +1069,15 @@ a {
     /* Image and Description MediaQuery Starts Here */
     .containers1 {
         width: 100%;
-        height: 230vh;
+        height: 180vh;
         overflow: hidden;
     }
+
+    .hover-shadow{
+      width: 100px;
+      height: 100px;
+    }
+
     .containers1 .leftimage{
       float: left;
       margin-left: 1rem;
@@ -922,6 +1086,13 @@ a {
       display: flex;
       height: 50vh;
       flex-direction:row;
+    }
+
+    .next,.prev{
+      top:50%;
+    }
+    .image{
+      height: 50vh;
     }
 
 

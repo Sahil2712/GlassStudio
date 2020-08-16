@@ -11,6 +11,12 @@ body {
     font-weight: 200;
     color: #666;
 }
+#logo{
+  margin-top: 5px;
+  width: 150px;
+}
+
+
 .feedback {
   background-color:black;
   border-radius: 40px;
@@ -282,7 +288,10 @@ ul li ul li .dropdown:hover{
 
 .scrolling-active .nav #logo {
   margin-top: 0.4rem;
-    height:50px;
+   height:55px;
+   width: 120px;
+
+
 }
 
 .scrolling-active .nav-link::after {
@@ -1078,7 +1087,10 @@ width: 300px;
     display:block;
   }
 /* Media Query For Navbar Ends Here */
-
+#logo{
+  margin-top: 5px;
+  width: 130px;
+}
   /* Part1 Media Query Starts Here */
   .bg-img {
       background-position: center;

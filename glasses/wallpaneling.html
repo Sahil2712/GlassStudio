@@ -5,14 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="wallpaneling.css">
-    <title>Wall Paneling</title>
+
+     <title>
+       Wall Paneling
+
+     </title>
+     <!-- add icon link -->
+     <link rel = "icon" href ="images\favicon-32x32.png" type = "image/x-icon">
   </head>
   <body>
     <div class="bg-img">
       <slider>
         <slide>
           <p class="p">
-             Wall Paneling Glass
+            Wall Paneling Glass
+
             <br/>
             <span>
               Want To Know More
@@ -28,7 +35,7 @@
         </slide>
         <slide>
           <p class="p">
-            Enhance Your Room <br/>
+          Enhance Your Room <br/>
             <span>
               Want To Know More
               <br/>
@@ -43,7 +50,11 @@
         </slide>
         <slide>
            <p class="p">
+            <!-- Countless innovative ideas <br/> -->
+
+
             Home Interior Asthetics<br/>
+
              <span>
                Want To Know More
                <br/>
@@ -58,7 +69,8 @@
           </slide>
         <slide>
            <p class="p">
-            customized design options<br/>
+             customized design options<br/>
+
              <span>
                Want To Know More<br/>
              </span>
@@ -77,8 +89,9 @@
         <i class="fas fa-bars" id="navbutton"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
-      <img src="images/logos.jpg" alt="JSR GLASS " width="100px" id="logo">
-
+      <a href="http://www.jsrglasstudio.com/">
+        <img src="images/jsr final logo-01.jpg" alt="JSR GLASS " id="logo">
+      </a>
       <ul class="nav-links">
 
         <li class="navlinking"><a href="../index.html">Home</a></li>
@@ -90,9 +103,9 @@
                        <ul class="dropdown">
                          <div class="hello"  >
                          <li style="margin-bottom:2rem; "><a href="allglasses.html" class="drophover" >View All Glass</a></li>
-                         <li><a href="lacqueredglass.html" class="drophover" >Lacquered Glass</a></li>
+                         <li><a href="lacqueredglass.html" class="drophover">Lacquered Glass</a></li>
                          <li><a href="digitalprinting.html" class="drophover">Digital Printing</a></li>
-                         <li><a href="etchedglass.html" class="drophover">Etched Glass</a></li>
+                         <li><a href="etchedglass.html" class="drophover" >Etched Glass</a></li>
                          <li><a href="laminatedfabrics.html" class="drophover">Laminated Fabric Glass</a></li>
                        </div>
 
@@ -108,7 +121,9 @@
 
 
                  <li class="navlinking" ><a href="../products.html">Products</a></li>
+                 <!-- <li  class="navlinking"><a href="#">Contact Us</a></li> -->
                  <li  class="navlinking"><a href="../contactus.html">Contact Us</a></li>
+
                  <!-- <li  class="navlinking"><a href="#">Search</a></li> -->
 
       </ul>
@@ -120,25 +135,120 @@
 
 <!-- Part2 Starts Here -->
 
-<div class="containers1">
+<!-- <div class="containers1">
   <div class="leftimage">
     <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">
 
     <div class="imageleft">
-      <img src="wallpanelingglass/main/3D Panel.jpg" alt="" class="images">
-      <img src="wallpanelingglass/main/glass wall 6.PNG" alt="" class="images">
+      <img src="etchedglass/product/acidetched.PNG" alt="" class="images">
+      <img src="etchedglass/product/acidetched1.PNG" alt="" class="images">
     </div>
     <div class="imageright">
-      <img src="wallpanelingglass/product/10+ Rapturous Minimalist Wardrobe Black  Ideas.jpg" alt="" class="images">
-      <img src="wallpanelingglass/product/Afroditi Krassa launches debut collection - onoffice magazine.jpg" alt="" class="images">
+      <img src="etchedglass/main/edit.PNG" alt="" class="images">
+      <img src="etchedglass/main/etchedmain.PNG" alt="" class="images">
     </div>
-  </a>
-  </div>
 
+  </a> -->
+  <div class="containers1">
+    <div class="leftimage">
+      <div class="imageleft">
+        <div class="images">
+          <img src="wallpanelingglass/main/3D Panel.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="wallpanelingglass/main/glass wall 6.PNG" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="images">
+      </div>
+      </div>
+      <div class="imageright">
+        <div class="images">
+          <img src="wallpanelingglass/product/10+ Rapturous Minimalist Wardrobe Black  Ideas.jpg" style="width:100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="wallpanelingglass/product/Afroditi Krassa launches debut collection - onoffice magazine.jpg" style="width:100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="images">
+        </div>
+      </div>
+    </div>
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="wallpanelingglass/main/3D Panel.jpg" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="wallpanelingglass/main/glass wall 6.PNG" style="width:100%; " class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="wallpanelingglass/product/10+ Rapturous Minimalist Wardrobe Black  Ideas.jpg" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="wallpanelingglass/product/Afroditi Krassa launches debut collection - onoffice magazine.jpg" style="width:100%" class="image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
 
   <div class="rightdescription">
     <h1 class="rightdescriptions">
       Wall Paneling Glass<br/>
+
     </h1>
     <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
       Utilising glass is one of the best ways to optimize space specially the vertical space of the walls or empty space which cannot be used for anything else.
@@ -149,71 +259,70 @@
           There are many types of glass available when it comes to enhancing your home décor. Many homeowners today are thinking of ways to enhance the home while keeping it beautiful and modern. Adding glass in a room makes it look larger, brighter and livelier.
         </p>
 
-          <!-- <h2 class="rightdescriptionheader">
-            Why choose Lacquered glass
-          </h2>
-          <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
-            <li> Durable :Lacquering ensures long lasting , beautiful colours</li>
-            <li>Easy to Use and Maintain </li>
-            <li>Environment-Friendly Paints Used</li>
-            <li>Processing:Can be Cut,Drilled,Grounded</li>
-          </ol> -->
           <!-- <h2 class="rightdescriptionheader"> -->
             <!-- Why choose Lacquered glass -->
-            <!-- Features
-          </h2>
-          <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
+            <!-- Features -->
+          <!-- </h2> -->
+          <!-- <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
             <li> Durable :Lacquering ensures long lasting , beautiful colours</li>
             <li>Easy to Use and Maintain </li>
             <li>Environment-Friendly Paints Used</li>
             <li>Processing:Can be Cut,Drilled,Grounded</li>
           </ol> -->
           <h2 class="rightdescriptionheader">
-            Applications
+            Application
           </h2>
-            <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
-            <!-- Lacquered Glass is ideal for use in domestic and commercial -->
-            <!-- locations which include offices, hotels, museums, theatres etc. -->
-             <!-- for the following purposes -->
-          </p>
+            <!-- <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
+            Lacquered Glass is ideal for use in domestic and commercial
+            locations which include offices, hotels, museums, theatres etc.
+             for the following purposes
+          </p> -->
           <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
             <li> Hall Way</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
             <li>Entrance Wall</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
             <li>Athletic Studio</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
             <li>Alcove Wall</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
             <li>Behind large pieces of furniture, such as a bed, office desk or surrounding a fireplace</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
             <li>Anywhere you’d like to draw out more space, light, colour or energy into a room</li>
+
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
 
             </ul>
+
           </ol>
           <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
 
-          To see variety of samples of Wall Paneling Glass you can drop by at our showroom or contact our
+          To see variety of samples of  wall Paneling Glass you can drop by at our showroom or contact our
           representative who will help you out to the best of his knowledge.
           <br/>
           <button type="button" name="button" class="button">
+            <!-- <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Contact Us</a> -->
             <a href="../contactus.html">Contact Us</a>
 
           </button>
@@ -230,7 +339,6 @@
   </a>
 </button>
 </div>
-
 <!-- Part2 Ends Here -->
 
 <!-- Part 4 Contact US Starts Here -->
@@ -238,6 +346,9 @@
 
 
 
+
+
+<!-- Footer Starts Here -->
 
 
 <!-- Footer Starts Here -->
@@ -250,8 +361,8 @@
          <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Tel:+91 83759 59175</a>
        </p>
        <p>
-         <a href="mailto:jsrglasstudio@gmail.com">
-           E-mail: jsrglasstudio@gmail.com</a>
+         <a href="mailto:sales@jsrglasstudio.com">
+           E-mail: sales@jsrglasstudio.com</a>
        </p>
      </div>
      </div>
@@ -262,8 +373,8 @@
          <br>
            JSR Design &amp; Glass Studio </a>
          </p>
-         <p>Delhi NCR,</p>
-         <p>New Delhi</p>
+         <p>F 161 Laxmi Nagar,</p>
+         <p>New Delhi,Delhi</p>
          <p>India</p>
        </div>
      </div>
@@ -301,13 +412,14 @@
    </div>
    </div>
    <div class="End">
-     <a href="#" class="ending">Techify</a>
+     <a href="https://webal.netlify.app/" class="ending">Webal</a>
    </div>
  </footer>
  <!-- Footer Ends Here -->
-   <!-- <script src="script.js" charset="utf-8"></script> -->
-   <script src="../script.js" charset="utf-8"></script>
+ <!-- Footer Ends Here -->
+ <script src="../script.js" charset="utf-8"></script>
 
+   <!-- <script src="script.js" charset="utf-8"></script> -->
   </div>
 
   </body>

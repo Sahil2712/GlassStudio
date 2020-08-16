@@ -9,7 +9,13 @@ body {
     /* color: ; */
 }
 
-/* Navbar */
+#logo{
+  margin-top: 5px;
+  width: 150px;
+}
+
+
+
 .feedback {
   background-color:black;
   border-radius: 40px;
@@ -23,7 +29,7 @@ body {
   right: 10px;
   color: white;
 }
-
+/* Navbar */
 nav{
    height: 90px;
    background:#0003;
@@ -58,7 +64,6 @@ nav ul .navlinking{
 
   font-weight: 200;
 }
-
 nav ul li a{
   position: relative;
   font-size: 13px;
@@ -175,6 +180,36 @@ ul li ul li .dropdown:hover{
 }
 
 
+/* Navbar */
+
+
+
+.scrolling-active {
+    background-color: #0007;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, .1);
+}
+
+.scrolling-active .nav {
+    height: 70px;
+    background-color: #0007;
+}
+
+.scrolling-active .nav a {
+    color:white;
+}
+
+.scrolling-active .nav #logo {
+  margin-top: 0.4rem;
+    height:55px;
+    width: 120px;
+}
+
+.scrolling-active .nav-link::after {
+    background-color: #313131;
+}
+
+
+/* Part2 Starts Here */
 
 
 /* Part1 Starts Here */
@@ -283,14 +318,14 @@ slider > *{
 slide:nth-child(1){
   left: 0%;
   animation-delay: -1s;
-  background-image: url('al/products/al staircase.PNG');
+  background-image: url('steel/cover/steel 2.PNG');
   background-size: cover;
   background-position: center;
 }
 slide:nth-child(2){
   animation-delay: 2s;
   /* background-image: url('Digital Printing/products/back painted.PNG'); */
-  background-image: url('al/cover/alr5.PNG');
+  background-image: url('steel/cover/stl 3.PNG');
   background-size: cover;
   /* background-image: url('Digital Printing/main/digital printing.PNG'); */
   background-position: center;
@@ -300,7 +335,7 @@ slide:nth-child(2){
 slide:nth-child(3){
   animation-delay: 5s;
   /* background-image: url('images/slide2.jpg'); */
-  background-image: url('al/cover/alr6.PNG');
+  background-image: url('steel/products/5.jpg');
   /* background-image: url('Digital Printing1roducts/digital printing 2.PNG'); */
   background-size: cover;
   background-position: center;
@@ -310,7 +345,7 @@ slide:nth-child(3){
 slide:nth-child(4){
   left: 100%;
   animation-delay: 8s;
-  background-image:url('al/products/alr2.PNG');
+  background-image:url('steel/products/stl4.PNG');
   /* background-image: url('Digital Printing/main/z2.PNG'); */
 
 
@@ -411,7 +446,24 @@ a{
   color:black;
 
 }
+.button {
+  margin-top: 2rem;
+  border-radius: 10px;
+  padding: 10px;
+  background-color:rgb(0,0,0);
 
+
+}
+.button a{
+    text-align: center;
+    color: #eee8;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+a{
+  text-decoration: none;
+
+}
 .contents {
 padding-left: 40px;
 padding-top: 10px;
@@ -422,6 +474,152 @@ font-weight: 1000;
 
 
 /* Image and Description Ends here */
+
+
+/* For Hover effect */
+/* .row > .column {
+  padding: 0 8px;
+
+} */
+.left,.right{
+  width:40%;
+  float:left;
+  margin-top:40px;
+background-color:red;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80vh;
+  overflow: auto;
+  /* background-color: black; */
+  background-color: #0008;
+  /* transform:transparent; */
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 900px;
+}
+.image{
+  height: 70vh;
+}
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+
+
+
+/* End of Hover effect */
+
 
 
 
@@ -736,7 +934,7 @@ font-weight: 1000;
     margin-top: 2rem;
   }
   .rightdescriptions{
-    /* color:red; */
+    color:red;
     text-shadow: 0rem 0.1rem 0.1rem #9b9b9b;
   }
   .rightdescription .rightdescriptionheader{
@@ -859,7 +1057,10 @@ font-weight: 1000;
     display:block;
   }
 /* Media Query For Navbar Ends Here */
-
+#logo{
+  margin-top: 5px;
+  width: 130px;
+}
   /* Part1 Media Query Starts Here */
   .bg-img {
       background-position: center;
@@ -923,7 +1124,7 @@ font-weight: 1000;
 
   .containers1{
     width: 100%;
-    height: 130vh;
+    height: 140vh;
     overflow:hidden;
   }
 
@@ -935,6 +1136,13 @@ font-weight: 1000;
     display: flex;
     height: 50vh;
     flex-direction:row;
+  }
+
+  .next,.prev{
+    top:50%;
+  }
+  .image{
+    height: 50vh;
   }
 
 

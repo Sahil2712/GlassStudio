@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="stainlesssteel.css">
-    <title>Stainless steel Railings </title>
+    <title>
+       Stainless Steel Railings
+    </title>
+    <!-- add icon link -->
+    <link rel = "icon" href ="images\favicon-32x32.png" type = "image/x-icon">
   </head>
   <body>
     <div class="bg-img">
       <slider>
         <slide>
           <p class="p">
-          	Resistant to wear and tear
+           	Resistant to wear and tear
             <br/>
-            <span>
+            <span style="color:white">
               Want To Know More
               <br/>
             </span>
@@ -28,11 +32,12 @@
         </slide>
         <slide>
           <p class="p">
-        	Corrison and dust free
+          Perfect Finish
             <br/>
-            <span>
+            <span style="color:white">
               Want To Know More
               <br/>
+            </span>
             </span>
             <button type="button" name="button" class="buttons">
               <!-- <a href="#">Contact US</a> -->
@@ -44,12 +49,12 @@
         </slide>
         <slide>
            <p class="p">
-             	Perfect Finish
-
+            	Weld Free
             <br/>
-             <span>
-               Want To Know More
-               <br/>
+            <span style="color:white">
+              Want To Know More
+              <br/>
+            </span>
              </span>
              <button type="button" name="button" class="buttons">
                <!-- <a href="tel:+91-8197352638">Contact US</a> -->
@@ -61,13 +66,12 @@
           </slide>
         <slide>
            <p class="p">
-             	Eco Friendly
-
-
+          	Eco Friendly
             <br/>
-             <span>
-               Want To Know More<br/>
-             </span>
+            <span style="color:white">
+              Want To Know More
+              <br/>
+            </span>
              <button type="button" name="button" class="buttons">
                <!-- <a href="tel:+91 8197352638">Contact US</a> -->
                <!-- <a href="https://wa.me/918375959175?text=I'm%20interested%20in%20knowing%20more%20about%20glasses and designs">Contact Us</a> -->
@@ -83,8 +87,9 @@
         <i class="fas fa-bars" id="navbutton"></i>
         <i class="fas fa-times" id="cancel"></i>
       </label>
-      <img src="images/logos.jpg" alt="JSR GLASS " width="100px" id="logo">
-
+      <a href="http://www.jsrglasstudio.com/">
+        <img src="images/jsr final logo-01.jpg" alt="JSR GLASS " id="logo">
+      </a>
       <ul class="nav-links">
 
         <li class="navlinking"><a href="../index.html">Home</a></li>
@@ -97,7 +102,7 @@
                          <div class="hello"  >
                          <li style="margin-bottom:2rem; "><a href="allglasses.html" class="drophover" >View All Glass</a></li>
                          <li><a href="lacqueredglass.html" class="drophover" >Lacquered Glass</a></li>
-                         <li><a href="digitalprinting.html" class="drophover" >Digital Printing</a></li>
+                         <li><a href="digitalprinting.html" class="drophover">Digital Printing</a></li>
                          <li><a href="etchedglass.html" class="drophover">Etched Glass</a></li>
                          <li><a href="laminatedfabrics.html" class="drophover">Laminated Fabric Glass</a></li>
                        </div>
@@ -128,33 +133,117 @@
 
 <!-- Part2 Starts Here -->
 
-<div class="containers1">
-  <div class="leftimage">
-    <div class="imageleft">
-      <img src="al\products\al staircase.PNG" alt="" class="images">
-      <img src="al\products\alluminium rl1.PNG" alt="" class="images">
+
+  <div class="containers1">
+    <div class="leftimage">
+      <div class="imageleft">
+        <div class="images">
+          <img src="steel\cover\stl 3.PNG" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="steel\products\4.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" id="images">
+      </div>
+      </div>
+      <div class="imageright">
+        <div class="images">
+          <img src="steel\cover\steel 2.PNG" style="width:100%;" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="images">
+        </div>
+        <div class="images">
+          <img src="steel\products\2.jpg" style="width:100%;" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="images">
+        </div>
+      </div>
     </div>
-    <div class="imageright">
-      <img src="al\products\alr2.PNG" alt="" class="images">
-      <img src="al\products\alr3.PNG" alt="" class="images">
+
+
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 4</div>
+          <img src="steel\cover\stl 3.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 4</div>
+          <img src="steel\products\4.jpg" style="width:100%; " class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 4</div>
+          <img src="steel\cover\steel 2.PNG" style="width:100%" class="image">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 4</div>
+          <img src="steel\products\2.jpg" style="width:100%" class="image">
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+
+
+      </div>
     </div>
-  </div>
+
+    <script>
+    function openModal() {
+      document.getElementById("myModal").style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById("myModal").style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
   <div class="rightdescription">
     <h1 class="rightdescriptions">
-    Stainless Railings<br/>
+    Stainless Steel Railings<br/>
     </h1>
     <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
       <!-- This is an ideal solution for balconies, stairs and building enclosures for high architectural standards, offering an impressive and functional result with no view limit. -->
-      This is an ideal solution for balconies, stairs and building enclosures for high architectural standards, offering an impressive and functional result with no view limit.
+This is an ideal solution for balconies, stairs and building enclosures for high architectural standards, offering an impressive and functional result with no view limit.
 
         </p>
         <h2 class="rightdescriptionheader">
-          Advantages
+            Advantages
           </h2>
-          <ol class="contents" style="color:black;font-weight:450;font-size:1rem;">
+          <ol class="contents" style="color:black;font-weight:300;font-size:1rem;">
             <li>
             	Perfect aesthetic result
-
             </li>
             <ul style="list-style-type:none;margin-bottom:0.4rem">
               <li></li>
@@ -201,24 +290,6 @@
               <li></li>
 
             </ul>
-            <li>
-              <!-- Easy cleaning -->
-              <!-- Quick Installation -->
-            Weld free
-            </li>
-            <ul style="list-style-type:none;margin-bottom:0.4rem">
-              <li></li>
-
-            </ul>
-            <li>
-              <!-- Easy cleaning -->
-              <!-- Quick Installation -->
-              Perfect Finish
-            </li>
-            <ul style="list-style-type:none;margin-bottom:0.4rem">
-              <li></li>
-
-            </ul>
             <!-- <li>Processing:Can be Cut,Drilled,Grounded</li> -->
           </ol>
 
@@ -250,15 +321,20 @@
             <li>Many More places its can be used in interior and exterior</li>
 
           </ol> -->
+
+          <p id="params" style="margin-top:20px; margin-bottom:10px; font-size:1.05rem; font-weight:300;float:left;text-align: justify; margin-right:2rem;">
+
+          To see variety of samples of Stainless Steel Railings you can drop by at our showroom or contact our
+          representative who will help you out to the best of his knowledge.
+          <br/>
+          <button type="button" name="button" class="button">
+            <!-- <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Contact Us</a> -->
+            <a href="../contactus.html">Contact Us</a>
+
+          </button>
+        </p>
   </div>
 </div>
-
-
-<!-- Part2 Ends Here -->
-
-<!-- Part 4 Contact US Starts Here -->
-
-
 <div id="mybutton">
 <button class="feedback" >
   <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products" >
@@ -269,7 +345,16 @@
 </button>
 </div>
 
+<!-- Part2 Ends Here -->
 
+<!-- Part 4 Contact US Starts Here -->
+
+
+
+
+
+
+<!-- Footer Starts Here -->
 
 <!-- Footer Starts Here -->
 
@@ -281,8 +366,8 @@
          <a href="https://wa.me/918375959175?text=Hello JSR I'm interested in knowing more about your products">Tel:+91 83759 59175</a>
        </p>
        <p>
-         <a href="mailto:jsrglasstudio@gmail.com">
-           E-mail: jsrglasstudio@gmail.com</a>
+         <a href="mailto:sales@jsrglasstudio.com">
+           E-mail: sales@jsrglasstudio.com</a>
        </p>
      </div>
      </div>
@@ -293,8 +378,8 @@
          <br>
            JSR Design &amp; Glass Studio </a>
          </p>
-         <p>Delhi NCR,</p>
-         <p>New Delhi</p>
+         <p>F 161 Laxmi Nagar,</p>
+         <p>New Delhi,Delhi</p>
          <p>India</p>
        </div>
      </div>
@@ -332,9 +417,10 @@
    </div>
    </div>
    <div class="End">
-     <a href="#" class="ending">Techify</a>
+     <a href="https://webal.netlify.app/" class="ending">Webal</a>
    </div>
  </footer>
+ <!-- Footer Ends Here -->
  <!-- Footer Ends Here -->
  <script src="../script.js" charset="utf-8"></script>
 
