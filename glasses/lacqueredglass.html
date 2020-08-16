@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="https://kit.fontawesome.com/yourcode.js"></script>
+    <!-- <script src="https://kit.fontawesome.com/yourcode.js"></script> -->
     <link rel="stylesheet" href="lacqueredglass.css">
     <title>
       Lacquered Glass
@@ -195,9 +195,6 @@
         <div class="caption-container">
           <p id="caption"></p>
         </div>
-
-
-
       </div>
     </div>
 
@@ -234,9 +231,9 @@
       for (i = 0; i < dots.length; i++) {
           dots[i].className = dots[i].className.replace(" active", "");
       }
-      // slides[slideIndex-1].style.display = "block";
+      slides[slideIndex-1].style.display = "block";
       // dots[slideIndex-1].className += " active";
-      captionText.innerHTML = dots[slideIndex-1].alt;
+      // captionText.innerHTML = dots[slideIndex-1].alt;
     }
     </script>
 
