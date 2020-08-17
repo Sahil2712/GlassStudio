@@ -39,7 +39,9 @@ a{
 nav {
     height: 90px;
     /* background: #0003; */
-    background-color: #0007;
+    background-color: #0001;
+    background: transparent;
+    z-index: 100;
 
     position: fixed;
     /* float: right; */
@@ -286,6 +288,7 @@ ul li ul li .dropdown:hover{
 
 .scrolling-active .nav {
     height: 70px;
+    background-color: #0007;
 }
 
 .scrolling-active .nav a {
@@ -337,7 +340,9 @@ slide:nth-child(1) {
 
 slide:nth-child(2) {
     animation-delay: 2s;
-    background-image: url('Lacquered Glass/product/back painted5.PNG');
+    /* background-image: url('Lacquered Glass/product/back painted5.PNG'); */
+    background-image: url('Lacquered Glass/main pic/2.jpg');
+
     background-size: cover;
     background-position: center;
     left: 100%;
@@ -345,7 +350,7 @@ slide:nth-child(2) {
 
 slide:nth-child(3) {
     animation-delay: 5s;
-    background-image: url('Lacquered Glass/product/backpaintedkitchen.jpg');
+    background-image: url('Lacquered Glass/main pic/1.jpg');
     background-size: cover;
     background-position: center;
     left: 100%;
@@ -381,18 +386,13 @@ slide .p span {
     text-transform: uppercase;
 }
 
-.buttons {
+/* .buttons {
     margin-top: 2rem;
     border-radius: 10px;
     padding: 10px;
     background-color: rgba(255, 255, 255, 0.1);
 }
-.buttons:hover{
-    margin-top: 2rem;
-    border-radius: 10px;
-    padding: 15px;
-    background-color: rgba(0, 255,255, 0.5);
-}
+
 
 .buttons a {
     text-align: center;
@@ -403,9 +403,31 @@ slide .p span {
 
 a {
     text-decoration: none;
+} */
+
+.buttons {
+  margin-top: 2rem;
+  border-radius: 20px;
+  padding: 10px;
+  background-color:#0001;
+  border-color: #fff;
+
 }
+.buttons a{
+    text-align: center;
+    color: #fff;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.buttons:hover{
+    margin-top: 2rem;
+    padding: 12px;
+    background-color: rgba(0, 255,255, 0.5);
+}
+a{
+  text-decoration: none;
 
-
+}
 /* Slides Animation Completes Here */
 
 
@@ -477,7 +499,9 @@ background-color:red;
 .modal {
   display: none;
   position: fixed;
-  z-index: 1;
+  /* z-index: 1; */
+  z-index: 100;
+  
   padding-top: 100px;
   left: 0;
   top: 0;
@@ -493,9 +517,11 @@ background-color:red;
   position: relative;
   margin: auto;
   padding: 0;
-  width: 80%;
+  width: 40%;
   max-width: 900px;
 }
+
+
 .image{
   height: 70vh;
 }
@@ -590,7 +616,6 @@ img.hover-shadow {
 .hover-shadow:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
 
 
 
@@ -725,17 +750,39 @@ font-weight: 300;
 
 /* Last Footer */
 
+
+/* Last Footer */
+
 .End {
     background-color: black;
-    padding: 18px;
+    /* padding: 28px; */
+    height: 8vh;
 }
 
-.End a {
+  .lefts,.rights{
+    margin-top: 1.2rem;
+    /* text-align: center; */
+    float: left;
+    width: 50%;
+  }
+  .rights{
+    text-align: right;
+  }
+  .ending{
+    margin-left: 2rem;
+  }
+  .ending1 {
+    /* margin-left: 36rem; */
+    margin-bottom:10px;
+    text-align: right;
     justify-content: space-between;
-    margin-left: 10rem;
-    font-size: 18px;
-    color: #ccc;
-}
+    margin-right: 10rem;
+    color: #fff;
+
+  }
+
+  /* Ends here */
+
 
 
 /* MediaQuery For Navbar */
@@ -858,14 +905,13 @@ font-weight: 300;
         /* font-style */
     }
     .buttons {
-        margin-top: 3rem;
+        /* margin-top: 3rem;
         border-radius: 20px;
         padding: 10px;
-        background-color: #eee8;
+        background-color: #eee8; */
     }
     .buttons a {
         text-align: center;
-        color: red;
     }
     a {
         text-decoration: none;
@@ -1088,10 +1134,16 @@ font-weight: 300;
       top:50%;
     }
     .image{
-      height: 50vh;
+      height: 40vh;
+    }
+    .modal-content{
+      width: 80%;
     }
 
-
+    .hover-shadow{
+      width: 100px;
+      height: 100px;
+    }
     .images{
       width: 110px;
       height: 90px;
@@ -1176,6 +1228,38 @@ font-weight: 300;
         margin-right: 3px;
     }
     /* Media Query for footer ends here */
+    .End {
+        background-color: black;
+        /* padding: 28px; */
+        height: 13vh;
+        font-size: 11.5px;
+    }
+
+      .lefts,.rights{
+        margin-top: 1rem;
+        text-align: center;
+        /* float: left; */
+        width: 100%;
+
+      }
+      .rights{
+        text-align:center;
+      }
+      .ending{
+        margin-left: 0rem;
+      }
+      .ending1 {
+        /* margin-left: 36rem; */
+        margin-left: 2rem;
+
+        margin-bottom:12px;
+        text-align: right;
+        justify-content: space-between;
+        margin-right: 0rem;
+        color: #fff;
+
+      }
+      /* Ends here */
 }
 
 
